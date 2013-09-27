@@ -1,22 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
 body{
   background:url(../images/squairy_light.png);
+  line-height: 1.6;
+  font-family: 'Merriweather', serif;
+  color: rgb(60,60,60);
 }
 
 .container{
-  width: 400px;
-  margin: 50px auto 0 auto;
+  width: 500px;
+  margin: 40px auto 0 auto;
   text-align: center;
 }
 
 .container img{
   width: 100px;
-  height: 100px;
-  border: 6px solid white;
-  margin-bottom: -40px;
+  border: 8px solid white;
+  margin-bottom: -60px;
 }
 
 .wrap{
   background-color: white;
   text-align: left;
-  padding: 30px;
+  padding: 70px 30px 30px 30px;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
 }
+
+h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+p{
+  margin-bottom: 15px;
+}
+
+.wrap p a {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.wrap p a:hover{
+  color: #34495e;
+}
+
+
