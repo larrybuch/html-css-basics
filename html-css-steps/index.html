@@ -9,7 +9,9 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/prism.css">
   <link rel="stylesheet" href="css/style.css">
+
 
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,33 +27,35 @@
         <h2>Set up your folder structure.</h2>
         <p>Create an empty project folder.</p>
         <p>Create an blank html file and name it <code>index.html.</code></p>
-        <p>Create a <span class="highlight">css folder</span> and an <span class="highlight">images folder</span> inside that blank folder.</p>
+        <p>Create a <span class="hi-lite">css folder</span> and an <span class="hi-lite">images folder</span> inside that blank folder.</p>
       </li>
       <li>
-        <h2>Add the <span class="highlight">boilerplate</span> structure to index.html.</h2>
-        <xmp>
-          <!DOCTYPE html>
-          <html>
-            <head>
+        <h2>Add the <span class="hi-lite">boilerplate</span> structure to index.html.</h2>
+        <pre>
+          <code class="language-markup">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
 
-              <title></title>
-              <meta name="description" content="">
+    &lt;title>&lt;/title>
+    &lt;meta name="description" content="">
 
-              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-              <!-- LINK CSS HERE -->
-              <link rel="stylesheet" href="">
+    &lt;!-- LINK CSS HERE -->
+    &lt;link rel="stylesheet" href="">
 
-              <!--[if lt IE 9]>
-                <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-              <![endif]-->
+    &lt;!--[if lt IE 9]>
+      &lt;script src="http://html5shim.googlecode.com/svn/trunk/html5.js">&lt;/script>
+    &lt;![endif]-->
 
-            </head>
-            <body>
-              <!-- CONTENT GOES HERE -->
-            </body>
-          </html>
-        </xmp>
+  &lt;/head>
+  &lt;body>
+    &lt;!-- CONTENT GOES HERE -->
+  &lt;/body>
+&lt;/html>
+          </code>
+        </pre>
       </li>
       <li>
         <h2>Create a blank file named style.css in your css folder.</h2>
@@ -65,11 +69,13 @@
         </p>
         <p>
           You can add some style like 
-          <code>
-            body{
-              background-color: red;
-            }
-          </code>
+          <pre>
+            <code class="language-css">
+body{
+  background-color: red;
+}
+</code>
+          </pre>
           to make sure your stylesheets are linked up.
         </p>
         <p>You also may want to use a reset.css file. Rembember we like <a href="http://meyerweb.com/eric/tools/css/reset/reset.css">this one</a> from code Jedi Eric Meyer.</p>
@@ -87,7 +93,7 @@
       <li>
         <h2>Decide if you need to use a css framework.</h2>
         <p>If you want your site to be responsive, or want to use a grid system, you may want to link up with a css framework like <a href="http://www.getskeleton.com/">Skeleton</a> (what we used in class), <a href="http://getbootstrap.com/">Bootstrap</a>, or <a href="http://foundation.zurb.com/">Foundation</a>.</p>
-        <p>Remember, a <span class="highlight">framework</span> is just a chunk of code that someone wrote for other people to use. You can download the css files and link them in your head tag to use them.</p>
+        <p>Remember, a <span class="hi-lite">framework</span> is just a chunk of code that someone wrote for other people to use. You can download the css files and link them in your head tag to use them.</p>
       </li>
       <li>
         <h2>Start to style.</h2>
@@ -97,6 +103,6 @@
 
 
   </div><!-- container -->
-
+  <script src="js/prism.js"></script>
 </body>
 </html>
