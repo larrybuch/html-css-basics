@@ -23,7 +23,7 @@ body{
 .wrap{
   background-color: white;
   text-align: left;
-  padding: 70px 30px 30px 30px;
+  padding: 70px 30px 55px 30px;
   -moz-box-shadow: 0 0 5px #888;
   -webkit-box-shadow: 0 0 5px#888;
   box-shadow: 0 0 5px #888;
@@ -72,7 +72,3 @@ li:hover{
   background-color: #34495e;
   border-color: #2c3e50;
 }
-
-
-
-
