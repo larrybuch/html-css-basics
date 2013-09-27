@@ -37,7 +37,7 @@ h1{
 }
 
 p{
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .wrap p a {
@@ -48,5 +48,31 @@ p{
 .wrap p a:hover{
   color: #34495e;
 }
+
+ul{
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: #3498db;
+  border-bottom: 5px solid #2980b9;
+  padding: 8px;
+  width: 80px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li:hover{
+  background-color: #34495e;
+  border-color: #2c3e50;
+}
+
+
 
 
