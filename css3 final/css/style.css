@@ -1,0 +1,98 @@
+body {
+  padding: 10px 200px;
+  font-family: Helvetica, arial, sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  border-bottom: solid 1px black;
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #777;
+  padding: 20px 0;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin: 10px 0;
+}
+
+.transitions .box:hover{
+  background: blue;
+  height: 300px;
+  width: 600px;
+}
+
+.transitions .all .box {
+  transition: 1s ease all;
+}
+
+.transitions .long-transition .box {
+  transition: 10s ease all;
+}
+
+.transitions .just-one .box {
+  transition: 1s ease background;
+}
+
+.transitions .different-properties .box {
+  transition: 1s ease background, 10s ease width, 5s ease height;
+}
+
+.transitions .delay .box {
+  transition: 1s ease all;
+  transition-delay: 1s;
+}
+
+.structural .first-child li:first-child{
+  background: red;
+}
+
+.structural .last-child li:last-child{
+  background: red;
+}
+
+.structural .nth-child li:nth-child(2){
+  background: red;
+}
+
+.structural .nth-child-odd li:nth-child(odd){
+  background: red;
+}
+
+.transform .rotate .box {
+  -webkit-transform: rotate(100deg);
+}
+
+.transform .scale .box {
+  -webkit-transform: scale(2, 1);
+}
+
+.border-radius .small-radius .box {
+  border-radius: 50px;
+}
+
+.border-radius .circle .box {
+  border-radius: 100px;
+}
+
+.attribute-selectors .exact a[href="http://google.com"] {
+  background: red;
+}
+
+.attribute-selectors .somewhere a[href*="samsung"]{
+  background: green;
+}
+
+.attribute-selectors .end a[href$="pdf"]{
+  background: yellow;
+}
+
+.attribute-selectors .end a[href$="pdf"]:after{
+  content: " PDF";
+}
