@@ -1,23 +1,49 @@
 @import url(http://fonts.googleapis.com/css?family=Merriweather:400,300);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,800);
 
 body{
-	line-height: 1.5;	
+	line-height: 1.6;	
 /*	background: rgb(240,240,240);*/
+	font-family: 'Merriweather', serif;
+	color: rgb(65,65,65);
 }
 
 h1{
-	font-size: 3em;
+	font-size: 5em;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: -1px;
 }
 
 h2{
 	font-size: 2.5em;
-	line-height: 1;
-	margin-bottom: 20px;
+	line-height: 1.2;
+	margin: 10px 0 20px 0;
+	color: rgb(20,20,20);
+}
+
+.details{
+	margin-bottom: 10px;
+}
+
+.author{
+	font-weight: 800;
+	color: #f1c40f;
+}
+
+.tag, .details{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.tag{
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .8em;
+	color: #95a5a6;
 }
 
 header {
-	margin: 20px 0;
+	margin: 40px 0;
 }
 
 footer{
@@ -25,18 +51,30 @@ footer{
 }
 
 nav{
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
+	border-bottom: 3px solid #f39c12;
 	padding: 15px 0;
+	background-color: #f1c40f;
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav ul{
+	text-align: center;
 }
 
 nav ul li {
 	display: inline;
+	padding-left: 20px;
 }
 
-.main-image{
-	height: 400px;
-	background-color: orange;
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.main-image img{
+	width: 100%;
 	margin-bottom: 30px;
 }
 
@@ -44,6 +82,14 @@ nav ul li {
 	border-bottom: 1px solid gray;
 	padding: 0 0 20px 0;
 	margin: 0 0 30px 0;
+}
+
+.sidebar section{
+	margin-bottom: 40px;
+}
+
+.sidebar section p{
+	margin-bottom: 10px;
 }
 
 /* #Media Queries
