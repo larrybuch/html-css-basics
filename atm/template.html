@@ -2,22 +2,24 @@
 
 <html>
 	<head>
-			<title> JavaScript Template </title>
+			<title>My bank</title>
 			<meta charset="utf-8">
+			<link rel="stylesheet" href="reset.css">
 			<link rel="stylesheet" href="template.css">
+
 			<script src="jquery-1.8.2.js"></script>
 			<script src="template.js"></script>
 	</head>
 	<body>
 		<div id="container">
-			<h1>Bank of GA</h1>
+			<h1>My bank</h1>
 			<div id="balance">
-				<span>$1000</span>
+				<span id="current-total">$1000</span>
 			</div>
 			<div id="transaction">
-				<input type="text" id="a" />
-				<input type="button" id="d" value="Deposit" />
-				<input type="button" id="w" value="Withdraw" />
+				<input type="text" id="amount" placeholder="Enter your amount here.">
+				<input type="button" id="deposit" value="Deposit">
+				<input type="button" id="withdraw" value="Withdraw">
 
 			</div>
 		</div>

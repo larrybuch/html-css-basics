@@ -2,32 +2,34 @@ var balance = 1000;
 
 $(function() {
 
-	$('#d').click(deposit);
-	$('#w').click(withdraw);
+	$('#deposit').click(deposit);
+	$('#withdraw').click(withdraw);
 
 });
 
 function deposit()
 {
-	var amount = $('#a').val();
-	var	t = parseInt(amount);
-	balance = balance + t;
-	$('span').text('$' + balance);
+	var amount = $('#amount').val();
+	var	total = parseInt(amount);
+	balance = balance + total;
+	$('#current-total').text('$' + balance);
 
 	if(balance > 0){
 		$('#balance').css('background', 'white');
+		$('#current-total').css('color', '#2ecc71');
 	}
 }
 
 function withdraw()
 {
-	var amount = $('#a').val();
-	var	t = parseInt(amount);
-	balance = balance - t;
-	$('span').text('$' + balance);
+	var amount = $('#amount').val();
+	var	total = parseInt(amount);
+	balance = balance - total;
+	$('#current-total').text('$' + balance);
 
 	if(balance < 0){
-		$('#balance').css('background', 'red');
+		$('#balance').css('background', '#e74c3c');
+		$('#current-total').css('color', 'white');
 	}
 
 }
