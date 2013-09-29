@@ -2,8 +2,8 @@ var balance = 1000;
 
 $(function() {
 
-$('#d').click(deposit);
-$('#w').click(withdraw);
+	$('#d').click(deposit);
+	$('#w').click(withdraw);
 
 });
 
@@ -14,7 +14,7 @@ function deposit()
 	balance = balance + t;
 	$('span').text('$' + balance);
 
-	if(balance >0){
+	if(balance > 0){
 		$('#balance').css('background', 'white');
 	}
 }
